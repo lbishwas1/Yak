@@ -24,6 +24,7 @@ button:hover{
 }
 a{
 	text-decoration: none;
+	color: black;
 }
 a:hover{
  color: tomato;
@@ -39,8 +40,13 @@ a:hover{
 	min-height:100vh;
 	background-color: #fff;
 	margin-left: 0px;
+	transition: 2s;
 }
 .logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	margin-top: 80px;
 }
 .navbar li{
@@ -329,3 +335,30 @@ color:#EF813E;
 	text-align: center;
 	justify-content: center;
 }
+.bar{
+position: absolute;
+top:30px;
+left: 90px;
+cursor: pointer;
+display: none;
+}
+ .bar .fa-times{
+	cursor: pointer;
+	z-index: 2;
+}
+.fa-times:hover{
+	color: red;
+}
+.fa:hover{
+	color: red;
+}
+
+@media only screen and (max-width: 1148px) {
+.bar{
+	display: block;
+}
+	.fa-times{
+		transform: translateX(-250px);
+		transition: 1s;
+	}
+  }

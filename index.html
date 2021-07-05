@@ -12,7 +12,9 @@
 <body>
 	<!----NAVBAR--->
 <div class="navbar">
-		<div class="logo"><img src="img/logo.jpg"></div>
+
+		<div class="logo">
+			<img src="img/logo.jpg"></div>
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
@@ -26,7 +28,12 @@
 
 <div class="wrapper">
 	<div id="landing">
+	
 		<div class="landing">
+			<div class=bar><i onclick="slideright()" class="fas fa-bars fa-2x"></i>
+				<i onclick="slideleft()" class="fas fa-times fa-2x"></i>
+
+			</div>	
 				<div class="left">
 					<h1>A deep taste enchanted in the receipe </h1>
 					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -38,16 +45,16 @@
 					</p>
 				</div>
 				<div class="right">
-					<img src="img/111.png">
+					<img class="hero" src="img/111.png">
 						<div class="features">
 								<ul>
-									<li><h3>100%</h3>
+									<li class="first-feat"><h3>100%</h3>
 										<p>Natural</p></li>
 						
-										<li><h3>0</h3>
+										<li class="second-feat"><h3>0</h3>
 										<p>Preservatives</p></li>
 						
-										<li><h3>100%</h3>
+										<li class="third-feat"><h3>100%</h3>
 										<p>Crafted</p></li>
 								</ul>
 						</div>
@@ -91,8 +98,8 @@
 <div class="products">
 	<h2>BEER BREWED WITH PASSION AND TRADITIONS</h2>
 		<div class="first">
-			<img src="img/111.png">
-			<div class="show">
+			<img class="two" src="img/111.png">
+			<div class="show one">
 				<h3>Bahrasinghe Craft</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, deserunt!
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, at.
@@ -104,7 +111,7 @@
 		</div>
 		<div class="first">
 		
-			<div class="show">
+			<div class="show two">
 				<h3>Bahrasinghe Strong</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, deserunt!
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae delectus molestiae hic quisquam a sequi veniam eligendi! Animi, eligendi eaque?
@@ -112,11 +119,11 @@
 
 				<button>See all sizes</button>
 			</div>
-			<img src="img/strong.png">
+			<img class="one" src="img/strong.png">
 		</div>
 		<div class="first">
-			<img src="img/superstrong.png">
-			<div class="show">
+			<img class="two" src="img/superstrong.png">
+			<div class="show one">
 				<h3>Bahrasinghe Strong</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non corporis quaerat quidem voluptates hic sequi fuga, voluptas deserunt quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, deserunt!</p>
 
@@ -125,7 +132,7 @@
 		</div>
 		<div class="first">
 		
-			<div class="show">
+			<div class="show two">
 				<h3>Falcon Beer</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, deserunt!
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae delectus molestiae hic quisquam a sequi veniam eligendi! Animi, eligendi eaque?
@@ -133,11 +140,11 @@
 
 				<button>See all sizes</button>
 			</div>
-			<img src="img/falcon.png">
+			<img class="one" src="img/falcon.png">
 		</div>
 		<div class="first">
-			<img src="img/eight.png">
-			<div class="show">
+			<img class="two" src="img/eight.png">
+			<div class="show one">
 				<h3>Bahrasinghe 8</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non corporis quaerat quidem voluptates hic sequi fuga, voluptas deserunt quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, deserunt!</p>
 
@@ -203,7 +210,6 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-<script>
-	
-</script>
+
+<script src="script.js"></script>
 </html>
